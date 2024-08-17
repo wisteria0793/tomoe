@@ -10,175 +10,227 @@ text-decoration-color: #000;
 text-underline-offset: 10px;
 }
 
-
-.custom-slider-container {
-position: relative;
-width: 500px;
-margin: 30px auto 10px;
-overflow: hidden; /* To hide overflow content */
-}
-
-.custom-slider-wrapper {
-display: flex;
-transition: transform 0.5s ease-in-out; /* Smooth transition effect */
-}
-
-.custom-slider-item {
-min-width: 100%; /* Each slide takes full width */
-box-sizing: border-box;
-}
-
-.custom-slider-item img {
-width: 100%;
-border-radius: 10px;
-}
-
-.custom-prev, .custom-next {
-position: absolute;
-top: 50%;
-transform: translateY(-50%);
-background: rgba(0, 0, 0, 0.5);
-color: #fff;
-border: none;
-padding: 10px;
-cursor: pointer;
-border-radius: 50%;
-z-index: 10; /* Ensure buttons are above other elements */
-}
-
-.custom-prev {
-left: 10px;
-}
-
-.custom-next {
-right: 10px;
-}
-
-.custom-dots {
-text-align: center;
-padding-top: 10px;
-}
-
-.custom-dots span {
-display: inline-block;
-width: 10px;
-height: 10px;
-margin: 5px;
-background-color: #ddd;
-border-radius: 50%;
-cursor: pointer;
-}
-
-.custom-dots .active {
-background-color: #333;
-}
-
-.facilities {
-width: 80%;
-height: auto;
-display: block;
-margin: auto;
-}
-
 .facilities .facility {
-margin-bottom: 150px;
+  margin-bottom: 150px;
+
+  .facility-name{
+    // padding-bottom: 10px;
+    border-bottom: 2px solid #828282;
+    align-items: center;
+    
+    &.property{
+      display: flex;
+      flex-wrap: nowrap;
+      // flex-direction: row;
+      justify-content: center;
+    }
+  }
+
+  & p.name{
+    font-size: 24px;
+    padding-left: 15px;
+    margin: 0;
+  }
+  & p.p.address{
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    // margin-right: 500px;
+  }
 }
 
-.facility .facility-name {
-display: flex;
-padding-bottom: 10px;
-border-bottom: 2px solid #828282;
-align-items: center;
-justify-content: space-between;
+
+
+@media screen and (max-width: 400px){
+  .facility .facility-name{
+    &.property{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    p.name{
+      text-align: center;
+  } 
+
+    p.address{
+      text-align: end;
+      justify-content: flex-end;
+      
+    }
+  }
 }
 
-.facility .facility-name p.name {
-font-size: 24px;
-padding-left: 15px;
-margin: 0;
-}
 
-.facility .facility-name p.address {
-font-size: 16px;
-/* padding-left: 15px; */
-display: flex;
-align-items: center;
-margin: 0px;
-}
+// .custom-slider-container {
+// position: relative;
+// width: 500px;
+// margin: 30px auto 10px;
+// overflow: hidden; /* To hide overflow content */
+// }
 
-.facility-explain {
-display: flex;
-}
+// .custom-slider-wrapper {
+// display: flex;
+// transition: transform 0.5s ease-in-out; /* Smooth transition effect */
+// }
 
-.facility-explain .text {
-align-items: flex-start;
-align-content: flex-start;
-justify-content: flex-start;
-display: flex;
-flex-wrap: wrap;
-gap: 5px;
-font-family: "Honoka", sans-serif;
-}
+// .custom-slider-item {
+// min-width: 100%; /* Each slide takes full width */
+// box-sizing: border-box;
+// }
 
-.facility-explain .text .explain {
-/* letter-spacing: 0.5em; */
-line-height: 24px;
-margin: 0px;
-padding-bottom: 10px;
-}
+// .custom-slider-item img {
+// width: 100%;
+// border-radius: 10px;
+// }
 
-.facility-explain .text .people {
-display: flex;
-flex-wrap: wrap;
-gap: 10px; /* SVGとテキストの間のスペースを調整 */
-/* padding: 10px; */
-/* margin: 0px 0; 上下のスペースを10pxに設定、左右は0 */
-}
+// .custom-prev, .custom-next {
+// position: absolute;
+// top: 50%;
+// transform: translateY(-50%);
+// background: rgba(0, 0, 0, 0.5);
+// color: #fff;
+// border: none;
+// padding: 10px;
+// cursor: pointer;
+// border-radius: 50%;
+// z-index: 10; /* Ensure buttons are above other elements */
+// }
 
-.facility-explain .text .people svg {
-flex-shrink: 0; /* SVGが縮小されないようにする */
-width: 32px;
-height: 32px;
-}
+// .custom-prev {
+// left: 10px;
+// }
 
-.facility-explain .text .people p {
-margin: 6px; /* p要素のデフォルトマージンをリセット */
-line-height: 1.5; /* テキストの行間を調整 */
-}
+// .custom-next {
+// right: 10px;
+// }
 
-.room-info {
-max-width: 600px;
-margin: 0 auto 20px;
-padding: 20px;
-/* border: 1px solid #ccc; */
-/* border-radius: 10px; */
-}
+// .custom-dots {
+// text-align: center;
+// padding-top: 10px;
+// }
 
-.room-info h2 {
-text-align: center;
-color: #333;
-}
+// .custom-dots span {
+// display: inline-block;
+// width: 10px;
+// height: 10px;
+// margin: 5px;
+// background-color: #ddd;
+// border-radius: 50%;
+// cursor: pointer;
+// }
 
-.room-info ul {
-list-style-type: none;
-padding: 0;
-}
+// .custom-dots .active {
+// background-color: #333;
+// }
 
-.room-info li {
-margin-bottom: 5px;
-color: #555;
-}
+// .facilities {
+// width: 80%;
+// height: auto;
+// display: block;
+// margin: auto;
+// }
 
-.room-info .amenities {
-padding-left: 20px;
-}
+// .facilities .facility {
+// margin-bottom: 150px;
+// }
 
-.room-info .amenities li {
-margin-bottom: 5px;
-}
+// .facility .facility-name {
+// display: flex;
+// padding-bottom: 10px;
+// border-bottom: 2px solid #828282;
+// align-items: center;
+// justify-content: space-between;
+// }
 
-.button-container {
-display: flex;
-justify-content: flex-end;
-align-items: center;
-}
+// .facility .facility-name p.name {
+// font-size: 24px;
+// padding-left: 15px;
+// margin: 0;
+// }
+
+// .facility .facility-name p.address {
+// font-size: 16px;
+// /* padding-left: 15px; */
+// display: flex;
+// align-items: center;
+// margin: 0px;
+// }
+
+// .facility-explain {
+// display: flex;
+// }
+
+// .facility-explain .text {
+// align-items: flex-start;
+// align-content: flex-start;
+// justify-content: flex-start;
+// display: flex;
+// flex-wrap: wrap;
+// gap: 5px;
+// font-family: "Honoka", sans-serif;
+// }
+
+// .facility-explain .text .explain {
+// /* letter-spacing: 0.5em; */
+// line-height: 24px;
+// margin: 0px;
+// padding-bottom: 10px;
+// }
+
+// .facility-explain .text .people {
+// display: flex;
+// flex-wrap: wrap;
+// gap: 10px; /* SVGとテキストの間のスペースを調整 */
+// /* padding: 10px; */
+// /* margin: 0px 0; 上下のスペースを10pxに設定、左右は0 */
+// }
+
+// .facility-explain .text .people svg {
+// flex-shrink: 0; /* SVGが縮小されないようにする */
+// width: 32px;
+// height: 32px;
+// }
+
+// .facility-explain .text .people p {
+// margin: 6px; /* p要素のデフォルトマージンをリセット */
+// line-height: 1.5; /* テキストの行間を調整 */
+// }
+
+// .room-info {
+// max-width: 600px;
+// margin: 0 auto 20px;
+// padding: 20px;
+// /* border: 1px solid #ccc; */
+// /* border-radius: 10px; */
+// }
+
+// .room-info h2 {
+// text-align: center;
+// color: #333;
+// }
+
+// .room-info ul {
+// list-style-type: none;
+// padding: 0;
+// }
+
+// .room-info li {
+// margin-bottom: 5px;
+// color: #555;
+// }
+
+// .room-info .amenities {
+// padding-left: 20px;
+// }
+
+// .room-info .amenities li {
+// margin-bottom: 5px;
+// }
+
+// .button-container {
+// display: flex;
+// justify-content: flex-end;
+// align-items: center;
+// }

@@ -2,6 +2,7 @@
 @use 'parts/nav';
 @use 'parts/explain';
 @use 'parts/header';
+@use 'parts/facilities';
 
 
 /* フォント */
@@ -248,31 +249,31 @@ small {
     margin: auto;
 }
 
-.facilities .facility{
-    margin-bottom: 150px;
-}
+// .facilities .facility{
+//     margin-bottom: 150px;
+// }
 
-.facility .facility-name{
-    display: flex;
-    padding-bottom: 10px;
-    border-bottom: 2px solid #828282;
-    align-items: center;
-    justify-content: space-between;
-}
+// .facility .facility-name{
+//     display: flex;
+//     padding-bottom: 10px;
+//     border-bottom: 2px solid #828282;
+//     align-items: center;
+//     justify-content: space-between;
+// }
 
-.facility .facility-name p.name{
-    font-size: 24px;
-    padding-left: 15px;
-    margin: 0;
-}
+// .facility .facility-name p.name{
+//     font-size: 24px;
+//     padding-left: 15px;
+//     margin: 0;
+// }
 
-.facility .facility-name p.address{
-    font-size: 16px;
-    /* padding-left: 15px; */
-    display: flex;
-    align-items: center;
-    margin: 0px; 
-}
+// .facility .facility-name p.address{
+//     font-size: 16px;
+//     /* padding-left: 15px; */
+//     display: flex;
+//     align-items: center;
+//     margin: 0px; 
+// }
 
 .facility-explain{
     display: flex;
