@@ -1,0 +1,47 @@
+// #header {
+//     // width: 100%;
+//     color: #fff;
+//     text-align: center;
+//     padding-top: 30px;
+//     background: #fff;
+//     height: 70px;
+//     display: flex;
+//     flex-direction: row;
+//     padding-left: 100px;
+// }
+
+.top-image {
+    // width: 100%;
+    height: calc(100vh - 70px); /* Adjust height to be full viewport minus header */
+    background-image: url('../images/tomoe_top.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+@media screen and (max-width: 500px) {
+    .top-image {
+        height: calc(100vh - 70px);
+    }
+}
+
+
+
+/* Header container styling */
+#header {
+    position: relative;
+    height: 100px; /* Adjust height as necessary */
+    background-color: #fff; /* Background color or other styles as needed */
+}
+
+/* Logo styling */
+.logo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Optional: Adjust the logo image size */
+.logo img {
+    height: 70px; /* Adjust the logo size */
+}
