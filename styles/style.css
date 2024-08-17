@@ -43,6 +43,25 @@
   -webkit-overflow-scrolling: touch;
 }
 
+.explain_brief {
+  margin: 50px;
+}
+.explain_brief .image {
+  width: 500px; /* 幅を100%に設定 */
+  height: auto; /* 高さを自動調整 */
+}
+
+.row .image .slideshow-container {
+  width: 700px; /* 幅を100%に設定 */
+  height: auto; /* 高さを自動調整 */
+}
+
+.slideshow-container {
+  max-width: 600px;
+  position: relative;
+  margin: auto;
+}
+
 /* フォント */
 @font-face {
   font-family: "Honoka";
@@ -123,23 +142,17 @@ small {
 }
 
 .top-image {
-    height: calc(100vh - 70px); /* Adjust height to be full viewport minus header */
-    background-image: url("../images/tomoe_top.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  height: calc(100vh - 70px); /* Adjust height to be full viewport minus header */
+  background-image: url("../images/tomoe_top.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+@media screen and (max-width: 500px) {
+  .top-image {
+    height: auto;
   }
-  
-  @media (max-width: 768px) {
-    .top-image {
-      height: calc(100vh - 50px); /* Adjust height for smaller screens if needed */
-      background-position: top center;
-    }
-  }
-  
-
-
-
+}
 .logo-container {
   max-width: 150px;
   position: fixed;
@@ -170,31 +183,6 @@ small {
 .nav-list a {
   text-decoration: none;
   color: #000;
-}
-
-.row {
-  margin: 100px;
-  display: flex;
-}
-
-.row .image img.image_only {
-  width: 500px; /* 幅を100%に設定 */
-  height: auto; /* 高さを自動調整 */
-}
-
-.row .image .slideshow-container {
-  width: 700px; /* 幅を100%に設定 */
-  height: auto; /* 高さを自動調整 */
-}
-
-.explain_brief .text {
-  margin: 50px;
-}
-
-.slideshow-container {
-  max-width: 600px;
-  position: relative;
-  margin: auto;
 }
 
 .mySlides {

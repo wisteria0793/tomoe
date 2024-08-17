@@ -1,3 +1,23 @@
-.explain_brief .text {
+.explain_brief {
     margin: 50px;
+
+    & .image{
+      width: 500px; /* 幅を100%に設定 */
+      height: auto; /* 高さを自動調整 */
+    }
   }
+
+
+
+
+.row .image .slideshow-container {
+  width: 700px; /* 幅を100%に設定 */
+  height: auto; /* 高さを自動調整 */
+}
+
+
+.slideshow-container {
+  max-width: 600px;
+  position: relative;
+  margin: auto;
+}
