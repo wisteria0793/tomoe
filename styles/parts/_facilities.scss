@@ -1,12 +1,15 @@
+// 確認済み
 .facilities{
-  // width: 80%;
+  width: 90%;
   height: auto;
   display: block;
   margin: auto;
+  
 }
 
 .facilities .title {
   text-align: center;
+  margin-bottom: 100px;
 }
 
 .facilities .title > p {
@@ -17,15 +20,20 @@ text-decoration-color: #000;
 text-underline-offset: 10px;
 }
 
+// 未確認
+
+
+
+
 .facilities .facility {
-margin-bottom: 150px;
+  margin-bottom: 150px;
 
 .facility-name{
   border-bottom: 2px solid #828282;
   align-items: center;
   display: flex;
   flex-wrap: nowrap;
-  justify-content: center;
+  justify-content: space-between
   
 }
 
@@ -43,7 +51,7 @@ margin-bottom: 150px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  // margin-right: 500px;
+  margin-right: 500px;
 }
 }
 
@@ -51,9 +59,8 @@ margin-bottom: 150px;
 
 @media screen and (max-width: 400px){
   .facility .facility-name{
+    // flex-direction: center;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
 
     p.name{
       text-align: center;
@@ -65,155 +72,4 @@ margin-bottom: 150px;
       
     }
   }
-}
-
-.custom-slider-container {
-  position: relative;
-  width: 100%;
-  margin: 30px auto 10px;
-  overflow: hidden; /* To hide overflow content */
-}
-
-.custom-slider-wrapper {
-  display: flex;
-  margin: auto 0;
-  transition: transform 0.5s ease-in-out; /* Smooth transition effect */
-}
-
-.custom-slider-item {
-  min-width: 100%; /* Each slide takes full width */
-  box-sizing: border-box;
-}
-
-.custom-slider-item > img {
-  width: auto;
-  border-radius: 10px;
-  display: flex;
-}
-
-@media screen and (max-width: 400px) {
-  .custom-slider-item img{
-    width: 300px;
-  }
-}
-
-
-
-.custom-prev, .custom-next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.5);
-  color: #fff;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  border-radius: 50%;
-  z-index: 10; /* Ensure buttons are above other elements */
-}
-
-.custom-prev {
-  left: 10px;
-}
-
-.custom-next {
-  right: 10px;
-}
-
-.custom-dots {
-  text-align: center;
-  padding-top: 10px;
-}
-
-.custom-dots span {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  margin: 5px;
-  background-color: #ddd;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-.custom-dots .active {
-  background-color: #333;
-}
-
-
-
-
-
-.facility-explain{
-  display: flex;
-}
-
-.facility-explain .text{
-  align-items: flex-start;
-  align-content: flex-start;
-  justify-content: flex-start;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 5px;
-  font-family: 'Honoka', sans-serif;
-}
-
-.facility-explain .text .explain{
-  /* letter-spacing: 0.5em; */
-  line-height: 24px;
-  margin: 0px;
-  padding-bottom: 10px;
-  
-}
-
-.facility-explain .text .people{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px; /* SVGとテキストの間のスペースを調整 */
-  /* padding: 10px; */
-  /* margin: 0px 0; 上下のスペースを10pxに設定、左右は0 */
-}
-
-
-.facility-explain .text .people svg {
-  flex-shrink: 0; /* SVGが縮小されないようにする */
-  width: 32px;
-  height: 32px;
-}
-
-.facility-explain .text .people p {
-  margin: 6px; /* p要素のデフォルトマージンをリセット */
-  line-height: 1.5; /* テキストの行間を調整 */
-}
-
-
-
-.room-info {
-  max-width: 600px;
-  margin: 0 auto 20px;
-  padding: 20px;
-  /* border: 1px solid #ccc; */
-  /* border-radius: 10px; */
-}
-
-.room-info h2 {
-  text-align: center;
-  color: #333;
-}
-
-.room-info ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.room-info li {
-  margin-bottom: 5px;
-  color: #555;
-}
-
-.room-info .amenities {
-  padding-left: 20px;
-}
-
-.room-info .amenities li {
-  margin-bottom: 5px;
 }
